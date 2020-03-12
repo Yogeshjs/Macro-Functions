@@ -1,0 +1,24 @@
+{
+  "name": "macro-functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "macro-functions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yogeshjs/Macro-Functions.git"
+  },
+  "keywords": [
+    "ramda",
+    "macro",
+    "functions"
+  ],
+  "author": "Yogesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yogeshjs/Macro-Functions/issues"
+  },
+  "homepage": "https://github.com/Yogeshjs/Macro-Functions#readme"
+}
