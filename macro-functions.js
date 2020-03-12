@@ -2,9 +2,7 @@
 /*	MF -- Macro Functions
 	Macro -- a single instruction that expands automatically into a set of instructions to perform a particular task.	
 */
-export default class MF{
-
-	static converge(fn, arrFn){
+	exports.converge = function(fn, arrFn){
 		return (val)=>{
     			let valArr = arrFn.map((currFn)=>{
             		return currFn(val);
@@ -14,7 +12,7 @@ export default class MF{
     		}
 	}
 
-	static pipe(...arrFn){
+	exports.pipe = function(...arrFn){
 		return (...val)=>{
     			let input = arrFn[0](...val);
        			arrFn.splice(0,1);
@@ -30,11 +28,11 @@ export default class MF{
     		}
 	}
 
-	static merge(firstObj, SecondObj){
+	exports.merge = function(firstObj, SecondObj){
 		return {...firstObj, ...SecondObj};
 	}
 
-	static compose(...arrFn){
+	exports.compose = function(...arrFn){
 
 		return (...val)=>{
 
@@ -54,5 +52,3 @@ export default class MF{
         		return output;
     		}
 	}
-
-}
